@@ -10,6 +10,13 @@
 
     alias vim="/usr/local/opt/vim/bin/vim"
     
+## PlantUML setup
+
+Run command below to install dependency
+
+    brew install plantuml
+    brew install graphviz
+    
 ## Go setup
     brew install go
 
@@ -19,4 +26,4 @@
     export GOROOT="$(brew --prefix golang)/libexec"
     export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
 
-Open Vim and execute :GoInstallBinaries
+Open Vim and execute `:GoInstallBinaries`

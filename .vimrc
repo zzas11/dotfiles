@@ -27,7 +27,15 @@ Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'derekwyatt/vim-scala'
 Plugin 'udalov/kotlin-vim'
-Plugin 'fatih/vim-go'
+
+" PlantUML
+Plugin 'aklt/plantuml-syntax'
+
+" Previm
+Plugin 'previm/previm'
+
+" Open-Browser
+Plugin 'tyru/open-browser.vim'
 
 call vundle#end()
 
@@ -67,3 +75,9 @@ augroup mySyntastic
   au FileType tex let b:syntastic_mode="passive"
 augroup END
 
+" Previm Settings
+let g:previm_open_cmd="open -a Google\\ Chrome"
+augroup PrevimSettings
+    autocmd!
+    autocmd BufNewFile,BufRead *.{md,mdwn,mkd,mkdn,mark*} set filetype=markdown
+augroup END
