@@ -20,7 +20,10 @@
 Run command below to install dependency
 
     brew install plantuml
-    brew install graphviz
+    
+## Tmux setup
+    
+    brew install tmux
     
 ## Go setup
     brew install go
