@@ -9,6 +9,11 @@
 .bash_profile
 
     alias vim="/usr/local/opt/vim/bin/vim"
+
+## Java setup
+
+    brew tap caskroom/versions
+    brew cask install java8 
     
 ## PlantUML setup
 
